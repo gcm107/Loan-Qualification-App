@@ -121,23 +121,30 @@ def save_qualifying_loans(qualifying_loans):
     # YOUR CODE HERE!
     save_it = questionary.confirm("Would you like to save the qualifying loans").ask()
      
-    # This line promts the user to tell us where to save the csv file.
-    csvpath = questionary.path("Where would you like to save the csv of qualified loans?").ask()
+    if save_it:
 
-    
-    csvpath = Path(csvpath)
-    
+        # This line promts the user to specify where the new file of qualifying loans should be saved (as a csv).
 
-    qualified_loan_data = qualifying_loans
+        csvpath = questionary.path("Where would you like to save the csv of qualified loans?").ask()
 
-    # Checks to see if path exists 
-    if Path.exists(csvpath) == "True":
-          print(f"{csvpath} has been replaced and only conatins the laons you qualify for.")
+        csvpath = Path(csvpath)
+
+        qualified_loan_data = qualifying_loans
+
+
+
+        # Checks to see if path exist: If it does, it replaced the old csv with the new csv of filtered loans. If it doesn't, it creates the new file with filtered loans.
+        if Path.exists(csvpath) == "True":
+            print(f"{csvpath} has been replaced and only conatins the laons you qualify for.")
+            print("Thanks for using this app!")
+        else:
+            print(f"{csvpath} has been created containing the loans you qualify for.")
+            print("Thanks for using this app!")
+
+
     else:
-       print(f"{csvpath} Has been created with the new file containing the loans you qualify for.")
+        sys.exit("Thanks for using the loan application") 
     
-
-
     return save_csv(csvpath,qualified_loan_data)
 
     
