@@ -10,7 +10,7 @@ This project uses these python packages:
 
 * [fire](https://github.com/google/python-fire) - For the command line interface, help page, and entry-point.
 
-* [questionary](https://github.com/tmbo/questionary) - For interactive user prompts and dialogs
+* [questionary](https://github.com/tmbo/questionary) - For dialogs that promt user input.
 
 ---
 
@@ -33,7 +33,7 @@ To use this application: Clone the repository, and in terminal type in:
 python app.py
 ```
 
-If it works the terminal will display the first question, which asks for the user's credit score. The last step asks the user where to save the (qualifying_loans.csv) file.
+If it works the terminal will display the first question, which asks for the user's credit score. The last two step asks the user if they want to save the qualified loans. If the answer is yes, it promts to pick where to save the file as a csv.
 
 ---
 
