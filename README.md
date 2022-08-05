@@ -1,4 +1,4 @@
-#Loan Qualifier Application
+# Loan Qualifier Application
 
 This is a command-line interface application which promts the user to enter credit score, monthly debt, monthly income, desired loan amount, and the value of their house. It then returns a list of loans the user is qualified for, and saves it as a .csv file. The saved location is also input by the user.
 
