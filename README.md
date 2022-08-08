@@ -35,6 +35,9 @@ python app.py
 
 If it works the terminal will display the first question, which asks for the user's credit score. The last two step asks the user if they want to save the qualified loans. If the answer is yes, it promts to pick where to save the file as a csv.
 
+
+![Loan_Qualification_App](InstuctionalImages/AppScreenshot.png)
+
 ---
 
 ---
