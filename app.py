@@ -14,7 +14,7 @@ from pathlib import Path
 import pandas as pd
 
 
-
+# This is where we import our functions load_csv, save_csv from our fileio file.
 
 from qualifier.utils.fileio import load_csv, save_csv
 
@@ -118,8 +118,12 @@ def save_qualifying_loans(qualifying_loans):
     """
     # @TODO: Complete the usability dialog for savings the CSV Files.
     # YOUR CODE HERE!
+    
+    # this is what promts the user to ask if they want to save the loans they qualify for.
     save_it = questionary.confirm("Would you like to save the qualifying loans").ask()
-     
+    
+    # this is what happens if the user says yes when asked to save.
+    
     if save_it:
 
         # This line promts the user to specify where the new file of qualifying loans should be saved (as a csv).
@@ -135,14 +139,14 @@ def save_qualifying_loans(qualifying_loans):
         # Checks to see if path exist: If it does, it replaced the old csv with the new csv of filtered loans. If it doesn't, it creates the new file with filtered loans.
         if Path.exists(csvpath) == "True":
             print(f"{csvpath} has been replaced and only conatins the laons you qualify for.")
-            print("Thanks for using this app!")
+            print("Thanks for using cale's app!")
         else:
             print(f"{csvpath} has been created containing the loans you qualify for.")
-            print("Thanks for using this app!")
+            print("Thanks for using cale's app!")
 
-
+    # this is what happens if the user says no when asked to save the new file
     else:
-        sys.exit("Thanks for using the loan application") 
+        sys.exit("Thanks for using the loan application created by cale") 
     
     return save_csv(csvpath,qualified_loan_data)
 
