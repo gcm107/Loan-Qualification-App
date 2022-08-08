@@ -1,0 +1,54 @@
+
+  942  git status
+  943  git branch 
+  944  git branch -al
+  945  git add .
+  946  git commit -m "Added loan qualifier app folders to Module 2 repo."
+  947  git status
+  948  git push
+  949  git pull
+  950  git push
+  951  git config pull.ff only
+  952  git push
+  953  git status
+  954  git pull
+  955  git branch -al
+  956  git branch 
+  957  ls
+  958  ..
+  959  cd . .
+  960  cd /Users/gcm/Desktop/ModuleChallenges/Module_2_challenge 
+  961  git status
+  962  git add .
+  963  git rm --cached Module_2_challenge/loan_qualifier_app
+  964  git status
+  965  rm .DS_Store
+  966  git add loan_qualifier_app
+  967  git commit -m "added the loan_qualifier_app folder to the repo"
+  968  git status
+  969  git pull
+  970  git push 
+  971  git add /Users/gcm/Desktop/ModuleChallenges/Module_2_challenge/loan_qualifier_app/
+  972  git status
+  973  git branch
+  974  ls
+  975  cat loan_qualifier_app
+  976  cd loan_qualifier_app
+  977  ls
+  978  git add .
+  979  git push
+  980  git clone https://github.com/gcm107/ModuleChallenges.git
+  981   mv /Users/gcm/Desktop/ModuleChallenges/Module_2_challenge > /Users/gcm/Desktop/ModuleChallenges/ModuleChallenges 
+  982  git status
+  983  git add /Users/gcm/Desktop/ModuleChallenges/ModuleChallenges/Module_2_challenge/ 
+  984  git status
+  985  git commit -m initial commit to aadd the loan_qualifier_app."\ngit status
+  986  git commit -m "initial commit to aadd the loan_qualifier_app."\ngit status
+  987  git add ModuleChallenges/Module_2_challenge/loan_qualifier_app
+  988  git status
+  989  git push
+  990  code .
+  991  code .
+  992  python app.py
+
+
