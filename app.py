@@ -8,7 +8,6 @@ Example:
 """
 import csv
 import sys
-from tkinter.messagebox import YES
 import fire
 import questionary
 from pathlib import Path
